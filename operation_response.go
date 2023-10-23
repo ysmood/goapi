@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
+	"github.com/ysmood/goapi/lib/openapi"
 )
 
 // Response is an interface that represents a response object.

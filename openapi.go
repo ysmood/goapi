@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"reflect"
 
-	ff "github.com/NaturalSelectionLabs/goapi/lib/flat-fields"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
-	"github.com/NaturalSelectionLabs/jschema"
 	"github.com/iancoleman/strcase"
-	"github.com/naturalselectionlabs/vary"
+	ff "github.com/ysmood/goapi/lib/flat-fields"
+	"github.com/ysmood/goapi/lib/openapi"
+	"github.com/ysmood/jschema"
+	"github.com/ysmood/vary"
 )
 
 // ConfigOpenAPI is a function to modify the generated OpenAPI doc.

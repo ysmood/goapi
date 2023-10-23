@@ -4,8 +4,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/NaturalSelectionLabs/goapi"
 	"github.com/gin-gonic/gin"
+	"github.com/ysmood/goapi"
 )
 
 func main() {

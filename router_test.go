@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/NaturalSelectionLabs/goapi"
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares"
+	"github.com/ysmood/goapi"
+	"github.com/ysmood/goapi/lib/middlewares"
 	"github.com/ysmood/got"
 )
 

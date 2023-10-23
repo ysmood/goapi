@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/NaturalSelectionLabs/goapi"
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares"
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares/calm"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
+	"github.com/ysmood/goapi"
+	"github.com/ysmood/goapi/lib/middlewares"
+	"github.com/ysmood/goapi/lib/middlewares/calm"
+	"github.com/ysmood/goapi/lib/openapi"
 	"github.com/ysmood/got"
 )
 

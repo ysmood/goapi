@@ -9,9 +9,9 @@ import (
 	"net/url"
 	"reflect"
 
-	ff "github.com/NaturalSelectionLabs/goapi/lib/flat-fields"
-	"github.com/NaturalSelectionLabs/jschema"
 	"github.com/xeipuuv/gojsonschema"
+	ff "github.com/ysmood/goapi/lib/flat-fields"
+	"github.com/ysmood/jschema"
 )
 
 type paramsIn int

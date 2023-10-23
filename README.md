@@ -29,9 +29,9 @@ the real performance depends on the complexity of the service.
 go test -bench=. -benchmem ./lib/bench
 goos: darwin
 goarch: arm64
-pkg: github.com/NaturalSelectionLabs/goapi/lib/bench
+pkg: github.com/ysmood/goapi/lib/bench
 Benchmark_goapi-12         34472             33856 ns/op            8448 B/op        114 allocs/op
 Benchmark_echo-12          36729             31175 ns/op            6776 B/op         82 allocs/op
 PASS
-ok      github.com/NaturalSelectionLabs/goapi/lib/bench 5.711s
+ok      github.com/ysmood/goapi/lib/bench 5.711s
 ```

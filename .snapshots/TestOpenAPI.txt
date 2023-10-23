@@ -4,7 +4,7 @@
     "components": {
       "schemas": {
         "Code": {
-          "description": "github.com/NaturalSelectionLabs/goapi/lib/openapi.Code",
+          "description": "github.com/ysmood/goapi/lib/openapi.Code",
           "enum": [
             "internal_error",
             "invalid_param",
@@ -14,7 +14,7 @@
         },
         "CommonError": {
           "additionalProperties": false,
-          "description": "github.com/NaturalSelectionLabs/goapi/lib/openapi.CommonError[github.com/NaturalSelectionLabs/goapi/lib/openapi.Code]",
+          "description": "github.com/ysmood/goapi/lib/openapi.CommonError[github.com/ysmood/goapi/lib/openapi.Code]",
           "properties": {
             "code": {
               "$ref": "#/components/schemas/Code"
@@ -36,12 +36,12 @@
           "required": [
             "code"
           ],
-          "title": "CommonError[github.com/NaturalSelectionLabs/goapi/lib/openapi.Code]",
+          "title": "CommonError[github.com/ysmood/goapi/lib/openapi.Code]",
           "type": "object"
         },
         "Error": {
           "additionalProperties": false,
-          "description": "github.com/NaturalSelectionLabs/goapi/lib/openapi.Error",
+          "description": "github.com/ysmood/goapi/lib/openapi.Error",
           "properties": {
             "code": {
               "$ref": "#/components/schemas/Code"

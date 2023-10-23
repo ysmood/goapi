@@ -1,4 +1,4 @@
-module github.com/NaturalSelectionLabs/goapi/lib/examples/as-gin-middleware
+module github.com/ysmood/goapi/lib/examples/as-gin-middleware
 
 go 1.21.1
 

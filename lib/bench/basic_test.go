@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/NaturalSelectionLabs/goapi"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/gommon/log"
+	"github.com/ysmood/goapi"
 )
 
 type ResGoapi struct {

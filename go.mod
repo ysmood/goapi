@@ -1,13 +1,13 @@
-module github.com/NaturalSelectionLabs/goapi
+module github.com/ysmood/goapi
 
 go 1.20
 
 require (
-	github.com/NaturalSelectionLabs/jschema v0.9.3
 	github.com/iancoleman/strcase v0.3.0
-	github.com/naturalselectionlabs/vary v0.3.4
 	github.com/xeipuuv/gojsonschema v1.2.0
 	github.com/ysmood/got v0.36.2
+	github.com/ysmood/jschema v0.9.4
+	github.com/ysmood/vary v0.3.6
 )
 
 require (

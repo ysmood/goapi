@@ -2,8 +2,8 @@
 package main
 
 import (
-	"github.com/NaturalSelectionLabs/goapi"
 	"github.com/labstack/echo/v4"
+	"github.com/ysmood/goapi"
 )
 
 func main() {

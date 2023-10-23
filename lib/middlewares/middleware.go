@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
+	"github.com/ysmood/goapi/lib/openapi"
 )
 
 // A Middleware https://cs.opensource.google/go/x/pkgsite/+/68be0dd1:internal/middleware/middleware.go

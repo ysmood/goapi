@@ -1,4 +1,4 @@
-module github.com/NaturalSelectionLabs/goapi/lib/bench
+module github.com/ysmood/goapi/lib/bench
 
 go 1.21.1
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/NaturalSelectionLabs/goapi"
+	"github.com/ysmood/goapi"
 )
 
 // ParamsHeader is the parameters for fetching posts.

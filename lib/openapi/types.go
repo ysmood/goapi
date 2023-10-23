@@ -1,7 +1,7 @@
 package openapi
 
 import (
-	"github.com/NaturalSelectionLabs/jschema"
+	"github.com/ysmood/jschema"
 )
 
 // Version represents the version of an OpenAPI document.

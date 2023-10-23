@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/NaturalSelectionLabs/jschema"
+	"github.com/ysmood/jschema"
 )
 
 func fnName(fn interface{}) string {

@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
-	"github.com/naturalselectionlabs/vary"
+	"github.com/ysmood/goapi/lib/middlewares"
+	"github.com/ysmood/goapi/lib/openapi"
+	"github.com/ysmood/vary"
 )
 
 // OperationHandler is a function to handle input and output of a http operation.

@@ -4,7 +4,7 @@ package main
 import (
 	"log"
 
-	"github.com/NaturalSelectionLabs/goapi"
+	"github.com/ysmood/goapi"
 )
 
 // Hello is the response for hello world.

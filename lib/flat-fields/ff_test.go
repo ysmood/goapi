@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	ff "github.com/NaturalSelectionLabs/goapi/lib/flat-fields"
+	ff "github.com/ysmood/goapi/lib/flat-fields"
 	"github.com/ysmood/got"
 )
 

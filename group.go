@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
+	"github.com/ysmood/goapi/lib/middlewares"
+	"github.com/ysmood/goapi/lib/openapi"
 )
 
 // Group of handlers with the same url path prefix.

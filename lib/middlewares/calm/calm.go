@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
+	"github.com/ysmood/goapi/lib/middlewares"
+	"github.com/ysmood/goapi/lib/openapi"
 )
 
 // Calm is a middleware to recover from panic.

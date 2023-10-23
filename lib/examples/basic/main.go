@@ -8,9 +8,9 @@ import (
 	"log"
 	"regexp"
 
-	"github.com/NaturalSelectionLabs/goapi"
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares/apidoc"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
+	"github.com/ysmood/goapi"
+	"github.com/ysmood/goapi/lib/middlewares/apidoc"
+	"github.com/ysmood/goapi/lib/openapi"
 )
 
 // This example shows 2 simple endpoints for typical blog website, login and fetch posts.

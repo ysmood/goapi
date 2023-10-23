@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/NaturalSelectionLabs/jschema"
 	"github.com/ysmood/got"
+	"github.com/ysmood/jschema"
 )
 
 func Test_paramsInGuard(t *testing.T) {

@@ -9,11 +9,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/NaturalSelectionLabs/goapi"
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
-	"github.com/naturalselectionlabs/vary"
+	"github.com/ysmood/goapi"
+	"github.com/ysmood/goapi/lib/middlewares"
+	"github.com/ysmood/goapi/lib/openapi"
 	"github.com/ysmood/got"
+	"github.com/ysmood/vary"
 )
 
 type Res interface {
@@ -146,5 +146,5 @@ func TestAddInterfaces(t *testing.T) {
 	goapi.AddInterfaces(set)
 
 	g.Eq(goapi.Interfaces[vary.ID(reflect.TypeOf(new(AddInterfaces)).Elem())].ID(),
-		"github.com/NaturalSelectionLabs/goapi_test.AddInterfaces")
+		"github.com/ysmood/goapi_test.AddInterfaces")
 }

@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"os"
 
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
+	"github.com/ysmood/goapi/lib/openapi"
 )
 
 // create a golang file "response_status_code.go" in the current directory.

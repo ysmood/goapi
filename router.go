@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/NaturalSelectionLabs/goapi/lib/middlewares"
-	"github.com/NaturalSelectionLabs/goapi/lib/openapi"
-	"github.com/NaturalSelectionLabs/jschema"
 	"github.com/xeipuuv/gojsonschema"
+	"github.com/ysmood/goapi/lib/middlewares"
+	"github.com/ysmood/goapi/lib/openapi"
+	"github.com/ysmood/jschema"
 )
 
 // Router for routing http requests to handlers.

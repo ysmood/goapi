@@ -4,7 +4,7 @@ package main
 import (
 	"log"
 
-	"github.com/NaturalSelectionLabs/goapi"
+	"github.com/ysmood/goapi"
 )
 
 // To test it:
