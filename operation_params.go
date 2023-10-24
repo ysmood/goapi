@@ -276,7 +276,8 @@ func parseField(s jschema.Schemas, flatField *ff.FlattenedField) *parsedField {
 	parsed := &parsedField{flatField: flatField, required: true}
 	t := f.Type
 
-	switch t.Kind() { //nolint: exhaustive
+	//nolint: exhaustive
+	switch t.Kind() {
 	case reflect.Ptr, reflect.Slice:
 		parsed.ptr = true
 	default:
