@@ -120,12 +120,20 @@ func double(num int) int {
 	return num * 2
 }
 
+type testMath struct{}
+
+func (testMath) triple(num int) int {
+	return num * 3
+}
+
 func TestAdd(t *testing.T) {
 	g := got.T(t)
 
 	tr := setupRouter(g, func(r *goapi.Group) {
 		goapi.Add(r, double)
+		goapi.Add(r, testMath{}.triple)
 	})
 
 	g.Eq(g.Req(http.MethodPost, tr.URL("/double"), "3").JSON(), 6)
+	g.Eq(g.Req(http.MethodPost, tr.URL("/triple"), "3").JSON(), 9)
 }

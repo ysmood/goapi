@@ -7,6 +7,7 @@ import (
 	"regexp"
 	"runtime"
 	"strconv"
+	"strings"
 
 	"github.com/ysmood/jschema"
 )
@@ -16,7 +17,12 @@ func fnName(fn interface{}) string {
 
 	fi := runtime.FuncForPC(fv.Pointer())
 
-	return regexp.MustCompile(`^.+\.`).ReplaceAllString(fi.Name(), "")
+	name := regexp.MustCompile(`^.+\.`).ReplaceAllString(fi.Name(), "")
+
+	// remove the "-fm" suffix for struct methods
+	name = strings.TrimSuffix(name, "-fm")
+
+	return name
 }
 
 var tUnmarshaler = reflect.TypeOf((*json.Unmarshaler)(nil)).Elem()
