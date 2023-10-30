@@ -38,9 +38,13 @@ func Add[P, S any](g *Group, fn func(P) S) *Operation {
 		Data S `response:"direct"`
 	}
 
-	return g.POST("/"+name, func(p P) res {
+	op := g.POST("/"+name, func(p P) res {
 		return res{Data: fn(p)}
 	})
+
+	op.name = name
+
+	return op
 }
 
 // GET is a shortcut for [Group.Add].
