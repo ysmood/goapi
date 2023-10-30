@@ -75,7 +75,7 @@ func main() {
 		return doc
 	})
 
-	log.Println(g.Start(":3000"))
+	log.Println(g.Run(":3000"))
 }
 
 // Simulate slow data fetching from database.

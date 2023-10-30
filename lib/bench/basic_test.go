@@ -33,7 +33,7 @@ func Benchmark_goapi(b *testing.B) {
 		return ResGoapi{Data: fmt.Sprintf("%d %s", p.ID, p.Keyword)}
 	})
 
-	go func() { _ = r.Start(":3000") }()
+	go func() { _ = r.Run(":3000") }()
 	b.Cleanup(func() { _ = r.Shutdown(context.Background()) })
 
 	time.Sleep(300 * time.Millisecond)

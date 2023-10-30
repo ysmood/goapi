@@ -67,7 +67,7 @@ func TestStart(t *testing.T) {
 	r := goapi.New()
 	r.GET("/", func() resOK { return resOK{Data: "ok"} })
 
-	go func() { _ = r.Start(":41375") }()
+	go func() { _ = r.Run(":41375") }()
 
 	time.Sleep(300 * time.Millisecond)
 

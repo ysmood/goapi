@@ -15,7 +15,7 @@ func main() {
 
 	goapi.Add(g, double)
 
-	log.Println(g.Start(":3000"))
+	log.Println(g.Run(":3000"))
 }
 
 // Handler for "POST /double" which doubles the input to response.

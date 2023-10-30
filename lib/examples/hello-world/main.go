@@ -21,5 +21,5 @@ func main() {
 		return Hello{Data: "Hello World!"}
 	})
 
-	log.Println(g.Start(":3000"))
+	log.Println(g.Run(":3000"))
 }

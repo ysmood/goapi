@@ -115,8 +115,8 @@ func (g *Group) Server() http.Handler {
 	return g.router.ServerHandler()
 }
 
-// Start is a shortcut for [Router.Start].
-func (g *Group) Start(addr string) error {
+// Run is a shortcut for [Router.Run].
+func (g *Group) Run(addr string) error {
 	return g.router.Start(addr)
 }
 
