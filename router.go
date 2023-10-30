@@ -55,8 +55,8 @@ func (r *Router) ServerHandler() http.Handler {
 	}))
 }
 
-// Start listen on addr with the [Router.ServerHandler].
-func (r *Router) Start(addr string) error {
+// Run listen on addr with the [Router.ServerHandler].
+func (r *Router) Run(addr string) error {
 	r.sever = &http.Server{
 		Addr:    addr,
 		Handler: r.ServerHandler(),

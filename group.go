@@ -121,7 +121,7 @@ func (g *Group) Server() http.Handler {
 
 // Run is a shortcut for [Router.Run].
 func (g *Group) Run(addr string) error {
-	return g.router.Start(addr)
+	return g.router.Run(addr)
 }
 
 // Shutdown is a shortcut for [Router.Shutdown].
