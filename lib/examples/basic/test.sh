@@ -24,6 +24,12 @@ curl 'localhost:3000/users/3/posts?keyword=sky&t=game' -H 'Cookie: token=123456'
 
 echo
 echo
+echo '== get posts error =='
+
+curl 'localhost:3000/users/3/posts?keyword=sky&t=game' -H 'Cookie: token=12345'
+
+echo
+echo
 echo '== validation error =='
 
 curl 'localhost:3000/users/3/posts?keyword=A&t=game' -H 'Cookie: token=123456'

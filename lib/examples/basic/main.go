@@ -48,7 +48,12 @@ func main() {
 	// The order of the parameters doesn't matter.
 	g.GET("/users/{id}/posts", func(c context.Context, f ParamsPosts, h ParamsHeader) ResPosts {
 		if h.Cookie != "token=123456" {
-			return goapi.StatusUnauthorized{}
+			return ResPostsInvalidToken{
+				Error: openapi.Error{
+					Code:    openapi.CodeInvalidParam,
+					Message: "your token is invalid",
+				},
+			}
 		}
 
 		return ResPostsOK{

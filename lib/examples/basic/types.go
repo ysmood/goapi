@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/ysmood/goapi"
+	"github.com/ysmood/goapi/lib/openapi"
 )
 
 // ParamsHeader is the parameters for fetching posts.
@@ -96,7 +97,7 @@ type ResPosts interface {
 	goapi.Response
 }
 
-var _ = goapi.Interface(new(ResPosts), ResPostsOK{}, goapi.StatusUnauthorized{})
+var _ = goapi.Interface(new(ResPosts), ResPostsOK{}, ResPostsInvalidToken{})
 
 // ResPostsOK is the response for successful fetching posts.
 type ResPostsOK struct {
@@ -106,6 +107,14 @@ type ResPostsOK struct {
 	// Use Meta to store info like pagination.
 	// Here we use it to store the total number of posts.
 	Meta int
+}
+
+// ResPostsInvalidToken is the response for invalid token.
+type ResPostsInvalidToken struct {
+	goapi.StatusBadRequest
+
+	// Here we use common error structure to express error info.
+	Error openapi.Error
 }
 
 // ResFavicon is the response for favicon.
