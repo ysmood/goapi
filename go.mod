@@ -6,8 +6,8 @@ require (
 	github.com/iancoleman/strcase v0.3.0
 	github.com/xeipuuv/gojsonschema v1.2.0
 	github.com/ysmood/got v0.37.0
-	github.com/ysmood/jschema v0.9.6
-	github.com/ysmood/vary v0.3.7
+	github.com/ysmood/jschema v0.9.7
+	github.com/ysmood/vary v0.4.1
 )
 
 require (

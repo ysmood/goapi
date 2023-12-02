@@ -1,10 +1,7 @@
 {
   "version": "0.2",
   "language": "en",
-  "ignorePaths": [
-    "*_enumer.go",
-    ".golangci.yml"
-  ],
+  "ignorePaths": ["*_enumer.go", ".golangci.yml"],
   "words": [
     "allocs",
     "apidoc",
@@ -30,7 +27,6 @@
     "labstack",
     "maintidx",
     "middlewares",
-    "naturalselectionlabs",
     "nestif",
     "noctx",
     "nolint",
