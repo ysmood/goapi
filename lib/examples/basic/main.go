@@ -6,6 +6,7 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"net/http"
 	"regexp"
 
 	"github.com/ysmood/goapi"
@@ -70,6 +71,12 @@ func main() {
 		return ResFavicon{
 			Data: bytes.NewBufferString("ok"),
 		}
+	})
+
+	// Useful when you want to handle websocket or raw http.
+	// It will not be included in the generated openapi doc.
+	g.GET("/raw-http", func(w http.ResponseWriter, r *http.Request) {
+		_, _ = w.Write([]byte("ok"))
 	})
 
 	// Install endpoints for openapi doc.
