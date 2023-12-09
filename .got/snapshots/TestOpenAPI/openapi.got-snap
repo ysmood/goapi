@@ -4,9 +4,15 @@ map[string]interface {}{
             "Code": map[string]interface {}{
                 "description": "github.com/ysmood/goapi/lib/openapi.Code",
                 "enum": []interface {}{
+                    "conflict",
+                    "forbidden",
                     "internal_error",
                     "invalid_param",
                     "not_found",
+                    "timeout",
+                    "too_large",
+                    "too_many_requests",
+                    "unauthorized",
                 },
                 "title": "Code",
             },

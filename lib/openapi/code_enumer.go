@@ -8,11 +8,11 @@ import (
 	"strings"
 )
 
-const _CodeName = "not_foundinvalid_paraminternal_error"
+const _CodeName = "not_foundinvalid_paramforbiddeninternal_errorunauthorizedtimeouttoo_many_requestsconflicttoo_large"
 
-var _CodeIndex = [...]uint8{0, 9, 22, 36}
+var _CodeIndex = [...]uint8{0, 9, 22, 31, 45, 57, 64, 81, 89, 98}
 
-const _CodeLowerName = "not_foundinvalid_paraminternal_error"
+const _CodeLowerName = "not_foundinvalid_paramforbiddeninternal_errorunauthorizedtimeouttoo_many_requestsconflicttoo_large"
 
 func (i Code) String() string {
 	if i < 0 || i >= Code(len(_CodeIndex)-1) {
@@ -31,24 +31,48 @@ func _CodeNoOp() {
 	var x [1]struct{}
 	_ = x[CodeNotFound-(0)]
 	_ = x[CodeInvalidParam-(1)]
-	_ = x[CodeInternalError-(2)]
+	_ = x[CodeForbidden-(2)]
+	_ = x[CodeInternalError-(3)]
+	_ = x[CodeUnauthorized-(4)]
+	_ = x[CodeTimeout-(5)]
+	_ = x[CodeTooManyRequests-(6)]
+	_ = x[CodeConflict-(7)]
+	_ = x[CodeTooLarge-(8)]
 }
 
-var _CodeValues = []Code{CodeNotFound, CodeInvalidParam, CodeInternalError}
+var _CodeValues = []Code{CodeNotFound, CodeInvalidParam, CodeForbidden, CodeInternalError, CodeUnauthorized, CodeTimeout, CodeTooManyRequests, CodeConflict, CodeTooLarge}
 
 var _CodeNameToValueMap = map[string]Code{
 	_CodeName[0:9]:        CodeNotFound,
 	_CodeLowerName[0:9]:   CodeNotFound,
 	_CodeName[9:22]:       CodeInvalidParam,
 	_CodeLowerName[9:22]:  CodeInvalidParam,
-	_CodeName[22:36]:      CodeInternalError,
-	_CodeLowerName[22:36]: CodeInternalError,
+	_CodeName[22:31]:      CodeForbidden,
+	_CodeLowerName[22:31]: CodeForbidden,
+	_CodeName[31:45]:      CodeInternalError,
+	_CodeLowerName[31:45]: CodeInternalError,
+	_CodeName[45:57]:      CodeUnauthorized,
+	_CodeLowerName[45:57]: CodeUnauthorized,
+	_CodeName[57:64]:      CodeTimeout,
+	_CodeLowerName[57:64]: CodeTimeout,
+	_CodeName[64:81]:      CodeTooManyRequests,
+	_CodeLowerName[64:81]: CodeTooManyRequests,
+	_CodeName[81:89]:      CodeConflict,
+	_CodeLowerName[81:89]: CodeConflict,
+	_CodeName[89:98]:      CodeTooLarge,
+	_CodeLowerName[89:98]: CodeTooLarge,
 }
 
 var _CodeNames = []string{
 	_CodeName[0:9],
 	_CodeName[9:22],
-	_CodeName[22:36],
+	_CodeName[22:31],
+	_CodeName[31:45],
+	_CodeName[45:57],
+	_CodeName[57:64],
+	_CodeName[64:81],
+	_CodeName[81:89],
+	_CodeName[89:98],
 }
 
 // CodeString retrieves an enum value from the enum constants string name.
