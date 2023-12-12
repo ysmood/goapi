@@ -223,7 +223,7 @@ func Test_parseResponse_err(t *testing.T) {
 
 	g.Eq(g.Panic(func() {
 		op.parseResponse(reflect.TypeOf(struct{}{}))
-	}), "handler must return a goapi.Response")
+	}), "handler must return a struct or interface that implements goapi.Response")
 
 	g.Eq(g.Panic(func() {
 		op.parseResponse(reflect.TypeOf(struct {

@@ -53,8 +53,8 @@ const (
 )
 
 func (op *Operation) parseResponse(t reflect.Type) *parsedRes {
-	if !t.Implements(tResponse) {
-		panic("handler must return a goapi.Response")
+	if t == tResponse || !t.Implements(tResponse) {
+		panic("handler must return a struct or interface that implements goapi.Response")
 	}
 
 	res := &parsedRes{operation: op, typ: t}
