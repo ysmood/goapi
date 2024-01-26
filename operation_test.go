@@ -277,3 +277,24 @@ func TestOperation(t *testing.T) {
 	g.Gt(res.Bytes().Len(), 1000)
 	g.Eq(res.Header.Get("Content-Type"), "image/png")
 }
+
+func TestHeader(t *testing.T) {
+	g := got.T(t)
+
+	tr := g.Serve()
+	r := goapi.New()
+
+	type Header struct {
+		goapi.InHeader
+		X string `default:""`
+		Y string `default:""`
+	}
+
+	r.GET("/header", func(h Header) res {
+		return resOK{Data: h.X}
+	})
+
+	tr.Mux.Handle("/", r.Server())
+
+	g.Eq(g.Req("", tr.URL("/header"), http.Header{"x": {"ok"}}).JSON(), map[string]any{"data": "ok"})
+}
