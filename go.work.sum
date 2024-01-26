@@ -1,8 +1,8 @@
 github.com/go-playground/assert/v2 v2.2.0/go.mod h1:VDjEfimB/XKnb+ZQfWdccd7VUvScMdVu0Titje2rxJ4=
 github.com/go-playground/validator/v10 v10.15.3/go.mod h1:9iXMNT7sEkjXb0I+enO7QXmzG6QCsPWY4zveKFVRSyU=
 github.com/golang-jwt/jwt v3.2.2+incompatible/go.mod h1:8pz2t5EyA70fFQQSrl6XZXzqecmYZeUEB8OUGHkxJ+I=
-github.com/ysmood/jschema v0.9.8 h1:83RuZzvnB8yrRjyhG82+VG/ccOOeVMLLsUUfXqUyOQY=
-github.com/ysmood/jschema v0.9.8/go.mod h1:zDqg0KWt6V57BArW4cnBEXNf1/bxwXhU7y5iGnFkjA0=
+github.com/ysmood/jschema v0.9.9 h1:HlWLYmxNloXxQ7WJy4JtTuOb3TOm4MAn6YYAPeNED3U=
+github.com/ysmood/jschema v0.9.9/go.mod h1:zDqg0KWt6V57BArW4cnBEXNf1/bxwXhU7y5iGnFkjA0=
 github.com/ysmood/vary v0.4.0/go.mod h1:Q8bR1thUFvwJKudCzD6Kn1ZjwsJo7Xrh2kYsTYAhkrg=
 golang.org/x/mod v0.8.0/go.mod h1:iBbtSCu2XBx23ZKBPSOrRkjjQPZFPuis4dIYUhu/chs=
 golang.org/x/term v0.10.0/go.mod h1:lpqdcUyK/oCiQxvxVrppt5ggO2KCZ5QblwqPnfZ6d5o=
